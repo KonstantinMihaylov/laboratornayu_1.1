@@ -1,26 +1,23 @@
 #include<stdio.h>
-#include<iostream>
 
-int Power(int namber, int power)//Функция возведения в степень
+
+int get_power(int namber, int power)
 {
-	int PowerNamber = 1;
-	for (int i = 0; i < power; i++)//Цикл пошагового ввозведения в степень
+	int power_number = 1;
+	for (int i = 0; i < power; i++)
 	{
-		PowerNamber *= namber;
+        power_number *= namber;
 	}
 
-	return PowerNamber;
+	return power_number;
 }
-int main()
-{
-	setlocale(LC_ALL, "ru");//Функция для вывода в консоль русского языка
-	int initialnamber = 0, power = 0;
-	printf("Введите число ");
-	scanf_s("%d", &initialnamber);
-	printf("\nВведите степень ");
-	scanf_s("%d", &power);
-	printf("\nВаше число в степени %d", Power(initialnamber, power));//Вызов функции и передача значений переменных
-
-	return 0;
-
-}
+//int main()
+//{
+//    int d;
+//    int a;
+//    scanf_s("%d%d", &d, &a);
+//    printf("%d", get_power(d, a));
+//
+//    return 0;
+//
+//}

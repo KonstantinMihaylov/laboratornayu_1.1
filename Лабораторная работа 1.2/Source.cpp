@@ -1,26 +1,33 @@
 #include<stdio.h>
-#include<iostream>
 
-
-int IsSimple(int value)//Функция проверки на простые числа
+int Is_Simple(int namber)
 {
-    for (int i = 2; i < value; i++)//Цикл для перебора возможных делителей
+
+    if (namber == 1 || namber == 0)
     {
-        if (value % i == 0)//Проверка на деление без остатка
+        return 0;
+    }
+    else
+    {
+        for (int i = 2; i < namber; i++)
         {
-            return 0;//фозврашает 0 - не простое
+            if (namber % i == 0)
+            {
+                return 0;
+            }
+
         }
     }
 
-    return 1;//фозрашает 1 - простое
+    return 1;
 }
-int main()
-{
-    int n = 0;
-    setlocale(LC_ALL, "ru");
-    printf("Введите число, для проверки ");
-    scanf_s("%d", &n);
-    printf("%d", IsSimple(n));//Фызываем функцуию
 
-    return 0;
-}
+//int main()
+//{
+//    int d;
+//    scanf_s("%d", &d);
+//    printf("%d", Is_Simple(d));
+//
+//    return 0;
+//
+//}
