@@ -6,7 +6,7 @@ int is_simple(int namber)
   {
       return printf("your number is not simple and not composite.\n");
   }
-  elsу
+  else
   {
      for (int i = 2; i < namber; i++)
      {
