@@ -1,15 +1,14 @@
 #include<stdio.h>
 
-
 int get_power(int namber, int power)
 {
-	int power_number = 1;
-	for (int i = 0; i < power; i++)
-	{
-        power_number *= namber;
-	}
+  int power_number = 1;
+  for (int i = 0; i < power; i++)
+  {
+     power_number *= namber;
+  }
 
-	return power_number;
+  return power_number;
 }
 //int main()
 //{
