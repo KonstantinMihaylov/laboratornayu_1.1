@@ -17,7 +17,7 @@ int IsSimple(int namber)
      }
   }
 
-    return 1;
+return 1;
 }
 
 //int main()
