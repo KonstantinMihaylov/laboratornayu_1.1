@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-int IsSimple(int namber)
+int is_simple(int namber)
 {
   if (namber == 1 || namber == 0)
   {
