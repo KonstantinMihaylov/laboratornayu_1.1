@@ -4,7 +4,7 @@ int Is_Simple(int namber)
 {
   if (namber == 1 || namber == 0)
   {
-      return 0
+      return printf("your number is not simple and not composite.\n");
   }
   elsу
   {
