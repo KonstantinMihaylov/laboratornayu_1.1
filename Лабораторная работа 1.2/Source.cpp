@@ -2,22 +2,20 @@
 
 int Is_Simple(int namber)
 {
-
-    if (namber == 1 || namber == 0)
-    {
-        return 0;
-    }
-    else
-    {
-        for (int i = 2; i < namber; i++)
+  if (namber == 1 || namber == 0)
+  {
+      return 0
+  }
+  elsу
+  {
+     for (int i = 2; i < namber; i++)
+     {
+        if (namber % i == 0)
         {
-            if (namber % i == 0)
-            {
-                return 0;
-            }
-
+           return 0;
         }
-    }
+     }
+  }
 
     return 1;
 }
